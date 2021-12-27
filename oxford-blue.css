@@ -4,7 +4,7 @@
   --ls-page-text-size: 1em;
   --ls-page-title-size: 40px;
   --ls-main-content-max-width: 940px;
-  --ls-font-family: "Montserrat";
+  --ls-font-family: Montserrat;
 
   --radius-sm: 2px;
   --radius-md: 3px;
@@ -21,7 +21,7 @@
 .white-theme,
 html[data-theme="light"] {
   --red: #e75154;
-  --orange: #D95D39;
+  --orange: #d95d39;
   --green: #2a9d8f;
   --blue: #5397d3;
 
@@ -96,13 +96,12 @@ html[data-theme="light"] {
 
   --selection: rgba(190, 235, 245, 0.6);
 
-	--page-ref-bg-hover: rgba(233, 241, 252, 1.00);
+  --page-ref-bg-hover: rgba(233, 241, 252, 1);
 
   --caret-color: var(--blue);
 
   --box-shadow-sm: rgba(171, 171, 171, 0.1) 0 2px 3px 0;
   --drop-shadow-sm: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
-
 }
 
 .dark-theme,
@@ -179,11 +178,11 @@ html[data-theme="dark"] {
   --external-link-color: #ee5020;
   --external-link-color-hover: #93b83d;
 
-  --highlighter: rgba(60, 133, 121, 0.60);
+  --highlighter: rgba(60, 133, 121, 0.6);
 
   --selection: var(--ls-block-highlight-color);
 
-	--page-ref-bg-hover: var(--selection);
+  --page-ref-bg-hover: var(--selection);
 
   --caret-color: var(--secondary-border-color);
 
@@ -845,10 +844,11 @@ a.button:hover {
 .block-ref:hover {
   background-color: rgba(var(--chinook), 0.2);
   color: inherit;
-	transition: var(--transition);
+  transition: var(--transition);
 }
-.page-reference:hover, .references-blocks .page-reference:hover{
-	background-color: var(--page-ref-bg-hover);
+.page-reference:hover,
+.references-blocks .page-reference:hover {
+  background-color: var(--page-ref-bg-hover);
 }
 
 .foldable-title h2 {
@@ -913,7 +913,6 @@ html[data-theme="dark"] .cp__sidebar-help-btn {
 
 /* Settings & Marketplace END */
 
-
 /* START Code Block */
 .extensions__code {
   background-color: #202a3b;
@@ -931,7 +930,7 @@ html[data-theme="dark"] .cp__sidebar-help-btn {
   padding: 4px 8px;
   right: 0;
   top: 0;
-	margin-top: 0;
+  margin-top: 0;
 }
 
 /* Code Block END */
