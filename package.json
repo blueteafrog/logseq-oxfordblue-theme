@@ -1,0 +1,21 @@
+{
+	"name": "Oxford Blue Theme",
+	"title": "Oxford Blue",
+	"author": "blueteafrog",
+	"version": "0.1.0",
+	"description": "Oxford blue theme is a high contrast theme to improve readability.",
+	"logseq": {
+		"themes": [
+			{
+				"name": "Oxford Blue Theme",
+				"url": "./oxford-blue.css",
+				"description": "Simple Theme"
+			}
+		],
+		"id": "blueteafrog-oxford-blue-theme",
+		"icon": "./icon.png"
+	},
+	"repo": "blueteafrog/logseq-oxfordblue-theme",
+  	"theme": true,
+	"effect": false
+}
