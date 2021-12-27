@@ -566,7 +566,7 @@ tr:nth-child(even) {
 .admonitionblock,
 .verse,
 blockquote {
-  --bg-bg: #f2f8f3;
+  --bq-bg: #f2f8f3;
   --bq-txt-bd: 163, 215, 173;
   --verse-bg: #eaf6f6;
   --verse-txt-bd: 183, 225, 227;
@@ -613,7 +613,7 @@ blockquote::before {
 }
 
 html[data-theme="light"] blockquote {
-  background-color: var(--bg-bg);
+  background-color: var(--bq-bg);
   border-color: rgba(var(--bq-txt-bd), 0.3);
 }
 
