@@ -320,44 +320,6 @@ a[priority="C"]::before,
 	border-radius: var(--radius-lg);
 }
 
-a:hover > .bullet-container .bullet {
-	background-color: rgba(var(--havelock-blue), 1);
-	box-shadow: 0 0 0 2px var(--ls-primary-background-color),
-		0 0 0 4px rgba(var(--havelock-blue), 1);
-	transform: scale(1.4);
-	transition: var(--transition);
-}
-
-.ls-block .bullet {
-	background-color: rgba(var(--havelock-blue), 1);
-	box-shadow: 0 0 0 2px var(--ls-primary-background-color),
-		0 0 0 4px rgba(var(--havelock-blue), 1);
-	display: block;
-	transition: var(--transition);
-}
-
-/*=========================================================*/
-/* === START highlight current path by cannibalox v0.2 ===*/
-/*=========================================================*/
-
-.ls-block:not(:focus-within) .bullet {
-	background-color: var(--ls-block-bullet-color);
-	box-shadow: none;
-}
-
-/* .block-children:not(:focus-within) {
-  border-left: 1px solid var(--ls-guideline-color);
-} */
-
-/*========================================================*/
-/* === highlight current path by cannibalox v0.2  END ===*/
-/*========================================================*/
-
-.block-children-container:focus-within > .block-children-left-border {
-	background-color: rgba(var(--havelock-blue), 0.5);
-	transition: var(--transition);
-}
-
 /* Bullet & Bullet Container END */
 
 /* Inline Header Tags Adjustments */

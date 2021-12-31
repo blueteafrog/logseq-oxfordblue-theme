@@ -2,14 +2,33 @@
 	"name": "Oxford Blue Theme",
 	"title": "Oxford Blue",
 	"author": "blueteafrog",
-	"version": "v0.0.2",
+	"version": "0.0.3",
 	"description": "Oxford blue theme features both a low contrast dark mode and high contrast light mode",
 	"logseq": {
 		"themes": [
 			{
-				"name": "Oxford Blue Theme",
+				"name": "Oxford Blue Theme Light",
 				"url": "./oxford-blue.css",
-				"description": "Oxford blue theme features both dark and light mode "
+				"description": "Oxford blue theme features both dark and light mode ",
+				"mode": "light"
+			},
+			{
+				"name": "Oxford Blue Theme Dark",
+				"url": "./oxford-blue.css",
+				"description": "Oxford blue theme features both dark and light mode ",
+				"mode": "dark"
+			},
+			{
+				"name": "Oxford Blue Theme NPH Light",
+				"url": "./oxford-blue-nph.css",
+				"description": "Oxford blue theme without path highlight",
+				"mode": "light"
+			},
+			{
+				"name": "Oxford Blue Theme NPH Dark",
+				"url": "./oxford-blue-nph.css",
+				"description": "Oxford blue theme without path highlight",
+				"mode": "dark"
 			}
 		],
 		"id": "blueteafrog-oxford-blue-theme",

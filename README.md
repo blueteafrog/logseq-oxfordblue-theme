@@ -10,8 +10,12 @@ The great themes in the marketplace
 
 ### Usage
 
-Admonitions
-You can use the built in feature to invoke the different admonitions by using `<` I attached a screen cap as an example
+1. Switching between Light & Dark Mode quick tap <kbd>t</kbd> <kbd>t</kbd> on your keyboard or from the settings menu select theme and your preferred version.
+<img width="1792" alt="1" src="https://user-images.githubusercontent.com/7694090/147798446-d035b178-a1fe-41e7-9cf6-dc3b2a7ef259.png">
+<img width="1792" alt="2" src="https://user-images.githubusercontent.com/7694090/147798447-2da7ad40-f15f-4b9b-9902-726f5e324fdc.png">
+
+2. Admonitions
+* You can use the built in feature to invoke the different admonitions by using `<` I attached a screen cap as an example
 
 https://user-images.githubusercontent.com/7694090/147600668-9adfacca-1a56-4216-a4b2-65b159ad7351.mov
 
