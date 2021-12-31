@@ -8,6 +8,13 @@ If you would like to support my work
 
 The great themes in the marketplace
 
+### Usage
+
+Admonitions
+You can use the built in feature to invoke the different admonitions by using `<` I attached a screen cap as an example
+
+https://user-images.githubusercontent.com/7694090/147600668-9adfacca-1a56-4216-a4b2-65b159ad7351.mov
+
 ### Screen Caps
 
 ![1](https://user-images.githubusercontent.com/7694090/147431063-036b96cd-1e88-4f01-b80d-0f8bc0bcdcd4.png)
