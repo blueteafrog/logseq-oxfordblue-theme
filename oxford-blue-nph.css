@@ -635,7 +635,8 @@ blockquote {
 
 .admonitionblock,
 .verse,
-blockquote, pre.pre-wrap-white-space {
+blockquote,
+pre.pre-wrap-white-space {
   border: 1px solid var(--transparent);
   border-radius: var(--radius-lg);
   margin: 1rem 0;
@@ -858,13 +859,13 @@ a.button:hover {
 
 :not(pre) > code {
   background-color: var(--pre-code-bg);
-  color: var(--pre-code-text);
   border: 1px solid var(--pre-code-text);
+  color: var(--pre-code-text);
 }
 
 .inline code {
-  color: var(--ls-page-inline-code-color);
   border: 1px solid var(--ls-page-inline-code-color);
+  color: var(--ls-page-inline-code-color);
 }
 
 .editor-inner textarea {
@@ -989,8 +990,8 @@ div[data-refs-self*='"card"'],
 .cards-review {
   border: 1px dotted var(--ls-border-color);
 }
-.cp__right-sidebar-topbar.items-center{
-	box-shadow: var(--box-shadow-sm);
+.cp__right-sidebar-topbar.items-center {
+  box-shadow: var(--box-shadow-sm);
 }
 /* MISC END */
 
@@ -1019,10 +1020,10 @@ div[data-refs-self*='"card"'],
   --kbd-color: 74, 74, 74; /* rgb(74, 74, 74) */
   --kbd-color-dark: 187, 202, 213; /*rgb (rgb(187, 202, 213) */
   --kbd-border: 1, 82, 89; /* rgb(1, 82, 89) */
-  display: inline-block;
-  border-radius: var(--radius-sm);
-  font-size: 0.85em;
   border-color: var(--transparent);
+  border-radius: var(--radius-sm);
+  display: inline-block;
+  font-size: 0.85em;
 }
 
 .keyboard-shortcut > code + code {
@@ -1030,15 +1031,15 @@ div[data-refs-self*='"card"'],
 }
 
 html[data-theme="light"] .keyboard-shortcut > code {
-  text-shadow: 0 1px 0 rgba(var(--kbd-color), 0.3);
   border-color: rgba(var(--kbd-border), 0.4);
   box-shadow: inset 0 -1px 0 rgba(var(--kbd-color), 0.3);
+  text-shadow: 0 1px 0 rgba(var(--kbd-color), 0.3);
 }
 
 html[data-theme="dark"] .keyboard-shortcut > code {
-  text-shadow: 0 1px 0 rgba(var(--kbd-color-dark), 0.3);
   border-color: rgba(var(--kbd-border), 0.3);
   box-shadow: inset 0 -1px 0 var(--ls-primary-background-color);
+  text-shadow: 0 1px 0 rgba(var(--kbd-color-dark), 0.3);
 }
 
 /* Settings & Marketplace END */
@@ -1046,6 +1047,7 @@ html[data-theme="dark"] .keyboard-shortcut > code {
 /* START Code Block */
 .extensions__code {
   background-color: #202a3b;
+  border: 1px solid var(--ls-border-color);
   border-radius: var(--radius-lg);
   margin-top: 6px;
 }
@@ -1057,10 +1059,10 @@ html[data-theme="dark"] .keyboard-shortcut > code {
   border-top-left-radius: 0;
   border-top-right-radius: var(--radius-sm);
   color: #fff;
+  margin-top: 0;
   padding: 4px 8px;
   right: 0;
   top: 0;
-  margin-top: 0;
 }
 
 /* Code Block END */
