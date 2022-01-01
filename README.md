@@ -10,25 +10,23 @@ The great themes in the marketplace
 
 ### Usage
 
-1. Switching between Light & Dark Mode quick tap <kbd>t</kbd> <kbd>t</kbd> on your keyboard or from the settings menu select theme and your preferred version.
-<img width="1792" alt="1" src="https://user-images.githubusercontent.com/7694090/147798446-d035b178-a1fe-41e7-9cf6-dc3b2a7ef259.png">
-<img width="1792" alt="2" src="https://user-images.githubusercontent.com/7694090/147798447-2da7ad40-f15f-4b9b-9902-726f5e324fdc.png">
+**After installing the theme through the Marketplace**
 
-2. Admonitions
-* You can use the built in feature to invoke the different admonitions by using `<` I attached a screen cap as an example
+Method 1. Switch between Light & Dark Mode by quick tapping <kbd>t</kbd> <kbd>t</kbd> on your keyboard
+Method 2. From the settings menu select the theme and your preferred version (Light or Dark).
 
-https://user-images.githubusercontent.com/7694090/147600668-9adfacca-1a56-4216-a4b2-65b159ad7351.mov
+**Admonitions** - You can use the built in feature to invoke the different admonitions by using <kbd> < </kbd> you can find example usage at the following link https://user-images.githubusercontent.com/7694090/147600668-9adfacca-1a56-4216-a4b2-65b159ad7351.mov
 
 ### Screen Caps
 
-![1](https://user-images.githubusercontent.com/7694090/147431063-036b96cd-1e88-4f01-b80d-0f8bc0bcdcd4.png)
-![2](https://user-images.githubusercontent.com/7694090/147431071-94dbe39b-6129-46ef-8fb2-ae706177972e.png)
-![3](https://user-images.githubusercontent.com/7694090/147431074-13705ab5-36ed-4243-b0bc-d42f44b78471.png)
-![4](https://user-images.githubusercontent.com/7694090/147431080-698e7a17-eabf-4343-afce-924e08718216.png)
-![5](https://user-images.githubusercontent.com/7694090/147431121-6c27be93-57b1-4caf-acc3-0ed563b91093.png)
-![6](https://user-images.githubusercontent.com/7694090/147431132-766abf74-9285-4d8b-9445-d4e55ed74b02.png)
-![7](https://user-images.githubusercontent.com/7694090/147431181-bd7fd512-6e57-4dda-ad22-79743839b867.png)
-![8](https://user-images.githubusercontent.com/7694090/147432153-7688857a-6828-4e8d-8e3d-58f991c3d2ae.png)
+<img src="https://user-images.githubusercontent.com/7694090/147431063-036b96cd-1e88-4f01-b80d-0f8bc0bcdcd4.png" alt="drawing" width="200"/>
+<img src="https://user-images.githubusercontent.com/7694090/147431071-94dbe39b-6129-46ef-8fb2-ae706177972e.png" alt="drawing" width="200"/>
+<img src="https://user-images.githubusercontent.com/7694090/147431074-13705ab5-36ed-4243-b0bc-d42f44b78471.png" alt="drawing" width="200"/>
+<img src="https://user-images.githubusercontent.com/7694090/147431080-698e7a17-eabf-4343-afce-924e08718216.png" alt="drawing" width="200"/>
+<img src="https://user-images.githubusercontent.com/7694090/147431121-6c27be93-57b1-4caf-acc3-0ed563b91093.png" alt="drawing" width="200"/>
+<img src="https://user-images.githubusercontent.com/7694090/147431132-766abf74-9285-4d8b-9445-d4e55ed74b02.png" alt="drawing" width="200"/>
+<img src="https://user-images.githubusercontent.com/7694090/147431181-bd7fd512-6e57-4dda-ad22-79743839b867.png" alt="drawing" width="200"/>
+<img src="https://user-images.githubusercontent.com/7694090/147432153-7688857a-6828-4e8d-8e3d-58f991c3d2ae.png" alt="drawing" width="200"/>
 
 ### Issues & Feedback
 
