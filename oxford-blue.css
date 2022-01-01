@@ -566,8 +566,9 @@ html[data-theme="light"] .cp__header > .l a {
 }
 
 nav:nth-child(1) > div.relative > div > div > div{
-	color: #00f1db;
+	color: var(--left-sb-txt-color);
 }
+
 nav:nth-child(1) > div.relative > div,
 nav:nth-child(1) > div.relative > div > div > a {
 	background-color: var(--left-sb-bg-color);
@@ -1006,8 +1007,7 @@ html[data-theme="dark"] .cp__sidebar-help-btn {
 }
 
 .cp__all_pages .actions {
-	background-color: var(--white);
-	border: 1px solid var(--ls-border-color);
+	background-color: var(--ls-primary-background-color);
 	padding: .5em 2em;
 }
 

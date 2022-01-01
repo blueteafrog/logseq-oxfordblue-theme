@@ -968,8 +968,7 @@ html[data-theme="dark"] .cp__sidebar-help-btn {
 }
 
 .cp__all_pages .actions {
-	background-color: var(--white);
-	border: 1px solid var(--ls-border-color);
+	background-color: var(--ls-primary-background-color;
 	padding: .5em 2em;
 }
 
