@@ -38,9 +38,9 @@ html[data-theme="light"] {
   --blue: #5397d3;
 
   --ls-primary-background-color: #ffffff;
-  --ls-secondary-background-color: #fdfdfd;
-  --ls-tertiary-background-color: hsl(180, 0%, 96%);
-  --ls-quaternary-background-color: hsl(180, 0%, 95%);
+  --ls-secondary-background-color: hsl(0, 0%, 97%);
+  --ls-tertiary-background-color: hsl(180, 0%, 97%);
+  --ls-quaternary-background-color: hsl(180, 0%, 98%);
 
   --ls-table-tr-even-background-color: 248, 250, 252; /* rgb(248, 250, 252) */
 
@@ -92,11 +92,11 @@ html[data-theme="light"] {
   --ls-search-icon-color: var(--ls-icon-color);
   --ls-a-chosen-bg: #edece8;
 
-  --color-level-1: hsl(0, 0%, 99%);
-  --color-level-2: hsl(0, 0%, 98%);
-  --color-level-3: hsl(0, 0%, 97%);
-  --color-level-4: hsl(0, 0%, 96%);
-  --color-level-5: hsl(0, 0%, 95%);
+  --color-level-1: hsl(213, 72%, 98%);
+  --color-level-2: hsl(215, 72%, 98%);
+  --color-level-3: hsl(217, 72%, 98%);
+  --color-level-4: hsl(219, 72%, 98%);
+  --color-level-5: hsl(221, 72%, 98%);
 
   --ui-button-bg: #4399e1;
   --ui-button-color: #f1f7fb;
@@ -574,6 +574,9 @@ nav:nth-child(1) > div.relative > div > div > div {
   cursor: pointer;
 }
 
+html[data-theme="light"] .cp__right-sidebar .sidebar-item {
+  background-color: var(--ls-secondary-background-color);
+}
 html[data-theme="dark"] .cp__right-sidebar .sidebar-item {
   background-color: var(--ls-primary-background-color);
 }
@@ -927,6 +930,7 @@ a.button:hover {
   border-radius: 0;
   font-size: inherit;
   padding: 0 4px;
+  transition: var(--transition);
 }
 
 .block-ref:hover {
@@ -992,6 +996,20 @@ div[data-refs-self*='"card"'],
 }
 .cp__right-sidebar-topbar.items-center {
   box-shadow: var(--box-shadow-sm);
+}
+
+a.warning,
+div.warning:not(.admonitionblock),
+p.warning,
+span.warning {
+  background: var(--red) !important;
+  color: var(--white, #fff);
+}
+
+a.error,
+span.error {
+  background: var(--red) !important;
+  color: var(--white, #fff);
 }
 /* MISC END */
 
@@ -1085,7 +1103,9 @@ html[data-theme="dark"] .keyboard-shortcut > code {
 .cm-s-solarized div.CodeMirror-selected {
   background: #273245;
 }
-
+.cm-s-solarized{
+	text-shadow: none;
+}
 .cm-s-solarized.cm-s-dark div.CodeMirror-selected {
   background: #273245;
 }
