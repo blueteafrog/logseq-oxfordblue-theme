@@ -1126,6 +1126,13 @@ span.error {
 	background-color: var(--quaternary-background-color);
 }
 
+.cp__settings-app-updater .update-state{
+	background-color: var(--green);
+}
+.cp__settings-app-updater .update-state > p {
+	color: var(--white);
+}
+
 .keyboard-shortcut > code {
 	--kbd-color: 74, 74, 74; /* rgb(74, 74, 74) */
 	--kbd-color-dark: 187, 202, 213; /*rgb (rgb(187, 202, 213) */
@@ -1322,7 +1329,7 @@ html[data-theme="dark"] .keyboard-shortcut > code {
 	background: #ff81ee;
 	color: #f8f8f0;
 }
-hsl(210, 44%, 96%) .cp__sidebar-left-layout a {
+.cp__sidebar-left-layout a {
 	font-size: 14px;
 }
 .cm-s-solarized .cm-qualifier {
