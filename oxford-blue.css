@@ -626,6 +626,11 @@ html[data-theme="dark"] .cp__right-sidebar .sidebar-item {
 	background-color: var(--ls-primary-background-color);
 }
 
+@media (min-width: 640px) {
+	.left-sidebar-inner .new-page {
+	  background-color: var(--left-sb-bg-color);
+	}
+  }
 /* Sidebar END */
 
 /* START Table */
