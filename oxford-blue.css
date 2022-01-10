@@ -4,7 +4,7 @@
 	--ls-page-text-size: 1em;
 	--ls-page-title-size: 40px;
 	--ls-main-content-max-width: 940px;
-	--ls-font-family: Montserrat;
+	--ls-font-family: Inter;
 
 	--radius-sm: 2px;
 	--radius-md: 3px;
@@ -87,9 +87,9 @@ html[data-theme="light"] {
 
 	--ls-head-text-color: var(--ls-primary-text-color);
 
-	--ls-icon-color: #908e8b;
+	--ls-icon-color: #b6b6b6;
 	--ls-search-icon-color: var(--ls-icon-color);
-	--ls-a-chosen-bg: #edece8;
+	--ls-a-chosen-bg: hsl(208, 46%, 94%);
 
 	--color-level-1: hsl(213, 72%, 98%);
 	--color-level-2: hsl(210, 44%, 98%);
@@ -120,7 +120,7 @@ html[data-theme="light"] {
 
 	--caret-color: var(--blue);
 
-	--card-title-color: hsl(0, 0%, 96%);
+	--card-title-color: hsl(213, 72%, 99%);
 
 	--codemirror-wrapper: #202a3b;
 	--example-admon: #f8f9fc;
@@ -213,7 +213,7 @@ html[data-theme="dark"] {
 	--external-link-color: #ee5020;
 	--external-link-color-hover: #93b83d;
 
-	--highlighter: rgba(60, 133, 121, 0.6);
+	--highlighter: hsl(46, 100%, 80%, 0.8);
 	--selection: var(--ls-block-highlight-color);
 
 	--pre-code-bg: var(--ls-page-inline-code-bg-color);
@@ -221,7 +221,7 @@ html[data-theme="dark"] {
 
 	--page-ref-bg-hover: var(--selection);
 
-	--caret-color: var(--secondary-border-color);
+	--caret-color: hsl(51, 100%, 50%);
 
 	--card-title-color: hsl(218, 34%, 16%);
 
@@ -716,7 +716,7 @@ blockquote::before {
 	font-weight: normal;
 	line-height: 0.1em;
 	margin-right: 1px;
-	vertical-align: -0.3em;
+	vertical-align: -0.25em;
 }
 
 html[data-theme="light"] blockquote {
@@ -890,12 +890,11 @@ html[data-theme="dark"] .pinned svg {
 /*  Admonition & Blockquote END */
 
 /* START MISC */
-
-mark {
+ mark {
 	background: var(--highlighter);
-	color: inherit;
 	font-size: inherit;
 }
+
 
 hr {
 	margin: 1rem 0;
@@ -908,6 +907,7 @@ hr {
 .ui__button {
 	background-color: var(--ui-button-bg);
 	color: var(--ui-button-color);
+	border-radius: var(--radius-sm);
 }
 
 .ui__button.active,
@@ -932,7 +932,7 @@ a.button:hover {
 	color: hsla(var(--ls-page-inline-code-color));
 }
 
-.editor-inner textarea {
+.editor-inner textarea, input {
 	caret-color: var(--caret-color);
 }
 
@@ -1001,14 +1001,18 @@ html[data-theme="dark"] .ui__modal .cards-title {
 }
 
 .block-ref {
-	border-bottom: 0.5px solid;
+	border-bottom: 1px solid;
 	border-bottom-color: var(--transparent);
 	/* border-bottom interferes with text decoration of block-references */
 	border-bottom-color: rgba(var(--chinook), 1);
 	border-radius: 0;
-	font-size: inherit;
-	padding: 0 4px;
-	transition: var(--transition);
+  font-size: inherit;
+  padding: 0 4px;
+	display: inline;
+}
+
+.block-ref > div div{
+	display: inline;
 }
 
 .block-ref:hover {
@@ -1106,6 +1110,16 @@ span.error {
 .block-children {
 	padding-top: 4px;
 	padding-bottom: 6px;
+}
+
+.menu-link:last-of-type {
+  border-bottom-left-radius: var(--radius-none);
+  border-bottom-right-radius: var(--radius-none);
+}
+
+.menu-link:first-of-type {
+  border-top-left-radius: var(--radius-none);
+  border-top-right-radius: var(--radius-none);
 }
 
 /* MISC END */
