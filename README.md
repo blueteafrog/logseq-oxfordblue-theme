@@ -17,6 +17,14 @@ Method 2. From the settings menu select the theme and your preferred version (Li
 
 **Admonitions** - You can use the built in feature to invoke the different admonitions by using <kbd> < </kbd> you can find example usage at the following link https://user-images.githubusercontent.com/7694090/147600668-9adfacca-1a56-4216-a4b2-65b159ad7351.mov
 
+**Changing Font** If you would like to use the font in the screencaps, "Montserrat" `@import` is included in the `oxford-blue.css` to use add the following to your custom.css file
+
+```
+:root {
+	--ls-font-family: Montserrat;
+}
+```
+
 ### Screen Caps
 
 <img src="https://user-images.githubusercontent.com/7694090/147431063-036b96cd-1e88-4f01-b80d-0f8bc0bcdcd4.png" alt="drawing" width="200"/>
