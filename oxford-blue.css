@@ -78,7 +78,7 @@ html[data-theme="light"] {
 	--ls-page-checkbox-color: rgba(var(--havelock-blue), 1);
 	--ls-page-checkbox-border-color: rgba(var(--havelock-blue), 1);
 
-	--ls-page-inline-code-color: 185, 98%, 31%;
+	--ls-page-inline-code-color: 206, 22%, 44%;
 	--ls-page-inline-code-bg-color: hsl(0, 0%, 97%);
 
 	--ls-scrollbar-foreground-color: rgba(0, 0, 0, 0.2);
@@ -144,7 +144,7 @@ html[data-theme="dark"] {
 	--ls-tertiary-background-color: #243045;
 	--ls-quaternary-background-color: #263247;
 
-	--ls-table-tr-even-background-color: #2a3546;
+	--ls-table-tr-even-background-color: hsl(216, 25%, 22%, 0.3);
 
 	--ls-active-primary-color: var(--blue);
 	--ls-active-secondary-color: var(--blue);
@@ -181,7 +181,7 @@ html[data-theme="dark"] {
 	--ls-page-checkbox-color: rgba(var(--havelock-blue), 1);
 	--ls-page-checkbox-border-color: rgba(var(--havelock-blue), 1);
 
-	--ls-page-inline-code-color: 185, 98%, 31%;
+	--ls-page-inline-code-color: 206, 22%, 74%;
 	--ls-page-inline-code-bg-color: hsl(219, 31%, 21%);
 
 	--ls-scrollbar-foreground-color: rgba(228, 235, 244, 0.1);
@@ -332,10 +332,13 @@ a[priority="C"]::before,
 	height: 20px;
 	width: 20px;
 }
+.block-children-left-border{
+	border-radius: 0;
+}
 
 .block-children-left-border:hover {
-	background-color: rgba(var(--havelock-blue), 0.6);
-	border-radius: var(--radius-lg);
+	background-color: rgba(var(--havelock-blue), 1);
+	border-radius: var(--radius-sm);
 }
 
 a:hover > .bullet-container .bullet {
@@ -343,7 +346,7 @@ a:hover > .bullet-container .bullet {
 	box-shadow: 0 0 0 2px var(--ls-primary-background-color),
 		0 0 0 4px rgba(var(--havelock-blue), 1);
 	transform: scale(1.4);
-	transition: var(--transition);
+	/* transition: var(--transition); */
 }
 
 .ls-block .bullet {
@@ -365,15 +368,15 @@ a:hover > .bullet-container .bullet {
 
 /* .block-children:not(:focus-within) {
   border-left: 1px solid var(--ls-guideline-color);
-} */
+}
 
 /*========================================================*/
 /* === highlight current path by cannibalox v0.2  END ===*/
 /*========================================================*/
 
 .block-children-container:focus-within > .block-children-left-border {
-	background-color: rgba(var(--havelock-blue), 0.5);
-	transition: var(--transition);
+	border-left: 1px solid rgba(var(--havelock-blue), 1);
+	display: block;
 }
 
 /* Bullet & Bullet Container END */
@@ -922,14 +925,14 @@ a.button:hover {
 
 :not(pre) > code {
 	background-color: var(--pre-code-bg);
-	border: 1px solid var(--pre-code-text);
+	border: 1px solid hsla(var(--ls-page-inline-code-color), .3);
 	color: var(--pre-code-text);
 	padding: 2px 5px !important;
 }
 
 .inline code {
-	border: 1px solid hsla(var(--ls-page-inline-code-color));
-	color: hsla(var(--ls-page-inline-code-color));
+	border: 1px solid hsla(var(--ls-page-inline-code-color), .3);
+	color: hsla(var(--ls-page-inline-code-color), .8);
 }
 
 .editor-inner textarea, input {
