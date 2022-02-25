@@ -111,9 +111,9 @@ html[data-theme="dark"] {
   --color-level-4: hsl(218, 34%, 18%);
   --color-level-5: hsl(218, 34%, 19%);
 
-  --ui-button-bg: #4399e1;
-  --ui-button-color: #f1f7fb;
-  --ui-button-bg-hover: #3a8acb;
+  --ui-button-bg: 	207, 72%, 57%;
+  --ui-button-color: 207, 72%, 57%;
+  --ui-button-bg-hover: hsl(207, 72%, 55%);
 
   --left-sb-bg-color: #141c29;
   --left-sb-bg-color-hover: #111822;
@@ -133,7 +133,7 @@ html[data-theme="dark"] {
   --pre-code-bg: var(--ls-page-inline-code-bg-color);
   --pre-code-text: hsla(var(--ls-page-inline-code-color), 0.6);
 
-  --page-ref-bg-hover: var(--selection);
+  --page-ref-bg-hover: hsl(201, 86%, 61%, 0.2);
 
   --caret-color: hsl(51, 100%, 50%);
 
@@ -220,9 +220,9 @@ html[data-theme="light"] {
   --color-level-4: hsl(210, 44%, 96%);
   --color-level-5: hsl(210, 44%, 95%);
 
-  --ui-button-bg: #4399e1;
-  --ui-button-color: #f1f7fb;
-  --ui-button-bg-hover: #3a8acb;
+  --ui-button-bg: 	207, 72%, 57%;
+  --ui-button-color: 207, 72%, 57%;
+  --ui-button-bg-hover: hsl(207, 72%, 55%);
 
   --left-sb-bg-color: #141c29;
   --left-sb-bg-color-hover: #111822;
@@ -242,7 +242,7 @@ html[data-theme="light"] {
   --pre-code-bg: var(--ls-page-inline-code-bg-color);
   --pre-code-text: hsla(var(--ls-page-inline-code-color), 0.8);
 
-  --page-ref-bg-hover: rgba(233, 241, 252);
+  --page-ref-bg-hover: hsl(201, 86%, 61%, 0.2);
 
   --caret-color: var(--blue);
 
@@ -632,11 +632,11 @@ html[data-theme="light"] .cp__header > .l a {
 }
 
 .dropdown-wrapper {
-  --left-sb-dropdown-bd: 48, 59, 77;
+  --left-sb-dropdown-bd: 38, 48, 64;
 }
 
 .dropdown-wrapper hr {
-  border-color: rgba(var(--left-sb-dropdown-bd), 0.15);
+  border-color: rgba(var(--left-sb-dropdown-bd), 0.45);
 }
 
 nav:nth-child(1) > div.relative > div > div > div {
@@ -650,7 +650,7 @@ nav:nth-child(1) > div.relative > div > div > a {
 
 .dark-theme #head > div.r.flex > div > div > div,
 nav:nth-child(1) > div.relative > div {
-  border: 1px solid rgba(var(--left-sb-dropdown-bd), 0.15);
+  border: 1px solid rgba(var(--left-sb-dropdown-bd), 0.45);
 }
 
 #left-sidebar a,
@@ -1028,7 +1028,7 @@ html[data-theme="dark"] .ui__button.active,
 html[data-theme="dark"] .ui__button:hover,
 html[data-theme="dark"] .cp__plugins-page .secondary-tabs button:hover,
 html[data-theme="dark"] .cp__plugins-page .tabs .ui__button:hover {
-  background-color: var(--ui-button-bg-hover) !important;
+  background-color: var(--ui-button-bg-hover);
   color: var(--inverted-text) !important;
 }
 
@@ -1036,7 +1036,7 @@ html[data-theme="light"] .ui__button.active,
 html[data-theme="light"] .ui__button:hover,
 html[data-theme="light"] .cp__plugins-page .secondary-tabs button:hover,
 html[data-theme="light"] .cp__plugins-page .tabs .ui__button:hover {
-  background-color: var(--ui-button-bg-hover) !important;
+  background-color: var(--ui-button-bg-hover);
   color: var(--inverted-text) !important;
 }
 
