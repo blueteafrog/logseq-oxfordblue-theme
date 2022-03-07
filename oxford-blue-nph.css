@@ -1,5 +1,3 @@
-/* TODO Issue with active buttons in plugin Module */
-
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 :root {
@@ -112,7 +110,7 @@ html[data-theme="dark"] {
   --color-level-5: hsl(218, 34%, 19%);
 
   --ui-button-bg: 	207, 72%, 57%;
-  --ui-button-color: 207, 72%, 57%;
+  --ui-button-color: 0, 0%, 100%;
   --ui-button-bg-hover: hsl(207, 72%, 55%);
 
   --left-sb-bg-color: #141c29;
@@ -221,7 +219,7 @@ html[data-theme="light"] {
   --color-level-5: hsl(210, 44%, 95%);
 
   --ui-button-bg: 	207, 72%, 57%;
-  --ui-button-color: 207, 72%, 57%;
+  --ui-button-color: 0, 0%, 10%;
   --ui-button-bg-hover: hsl(207, 72%, 55%);
 
   --left-sb-bg-color: #141c29;
@@ -937,7 +935,7 @@ mark {
   background: var(--highlighter);
   font-size: inherit;
 }
-mark .page-ref, mark .bracket{
+mark .page-ref, mark .bracket, .preview-trigger-wrapper mark, .search-results mark{
 	color: #1f1f1f;
 }
 
@@ -949,53 +947,34 @@ hr {
   background-color: var(--selection);
 }
 
-html[data-theme="dark"] .ui__button {
-  background-color: hsl(var(--ui-button-bg), 0.05);
-  border: 1px solid hsl(var(--ui-button-color), 0.1);
-  border-radius: var(--radius-md);
-  color: hsl(var(--ui-button-color));
+.cp__plugins-page .tabs .ui__button.active, .cp__plugins-page .tabs .ui__button:hover {
+	background-color: hsl(var(--ui-button-bg));
+	color: var(--white);
 }
 
-html[data-theme="dark"] .cp__plugins-page .secondary-tabs button.active {
-  background: hsl(var(--ui-button-bg));
-  color: var(--inverted-text);
+.cp__plugins-page .secondary-tabs button.active, .cp__plugins-page .secondary-tabs button:hover {
+	background-color: hsl(var(--ui-button-bg));
+	color: var(--white);
 }
 
-html[data-theme="light"] .ui__button {
-  background-color: hsl(var(--ui-button-bg), 0.15);
-  border: 1px solid hsl(var(--ui-button-color), 0.5);
-  border-radius: var(--radius-md);
-  color: hsl(var(--ui-button-color));
+.ui__button {
+	border-radius: var(--radius-sm);
 }
 
-html[data-theme="light"] .cp__plugins-page .secondary-tabs button.active,
-html[data-theme="light"] .cp__plugins-page .tabs .ui__button.active {
-  background: hsl(var(--ui-button-bg));
-  border: 1px solid hsl(var(--ui-button-color));
-  color: var(--ls-link-text-color);
+.bg-red-600 {
+	background-color: #ff6a70;
 }
 
-html[data-theme="dark"] .cp__plugins-page .secondary-tabs button.active,
-html[data-theme="dark"] .cp__plugins-page .tabs .ui__button.active {
-  background: hsl(var(--ui-button-bg));
-  border: 1px solid hsl(var(--ui-button-color));
-  color: var(--inverted-text);
+.bg-green-600{
+	background-color: #7fcabd;
 }
 
-html[data-theme="dark"] .ui__button.active,
-html[data-theme="dark"] .ui__button:hover,
-html[data-theme="dark"] .cp__plugins-page .secondary-tabs button:hover,
-html[data-theme="dark"] .cp__plugins-page .tabs .ui__button:hover {
-  background-color: var(--ui-button-bg-hover);
-  color: var(--inverted-text) !important;
+.bg-indigo-600 {
+	background-color: #62abf4;
 }
 
-html[data-theme="light"] .ui__button.active,
-html[data-theme="light"] .ui__button:hover,
-html[data-theme="light"] .cp__plugins-page .secondary-tabs button:hover,
-html[data-theme="light"] .cp__plugins-page .tabs .ui__button:hover {
-  background-color: var(--ui-button-bg-hover);
-  color: var(--inverted-text) !important;
+.hover\:bg-indigo-700:hover{
+	background-color: #53a3f3;
 }
 
 :not(pre) > code {
@@ -1224,9 +1203,6 @@ span.error {
   opacity: 1;
 }
 
-.cp__plugins-page .tabs .ui__button.active {
-  background-color: var(--quaternary-background-color);
-}
 
 .cp__settings-app-updater .update-state {
   background-color: var(--green);
@@ -1480,7 +1456,7 @@ html[data-theme="dark"] .keyboard-shortcut > code {
 /* START Templater plugin */
 
 .templater-btn {
-  background-color: hsl(var(--ui-button-bg), 0.05);
+  background-color: hsl(var(--ui-button-bg), 0.85);
   border: 1px solid hsl(var(--ui-button-color), 0.1);
   border-radius: var(--radius-md);
   color: hsl(var(--ui-button-color));
