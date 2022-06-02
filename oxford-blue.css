@@ -561,7 +561,8 @@ html[data-theme="light"] .cp__header>.l a {
 }
 
 .left-sidebar-inner .nav-content-item>.header:hover,
-.left-sidebar-inner .nav-content-item .header:hover #left-sidebar a:hover {
+.left-sidebar-inner .nav-content-item .header:hover,
+#left-sidebar a:hover {
 	background-color: var(--left-sb-bg-color-hover);
 	color: var(--left-sb-txt-color-hover) !important;
 }
