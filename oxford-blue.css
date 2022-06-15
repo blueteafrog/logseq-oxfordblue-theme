@@ -611,11 +611,11 @@ nav:nth-child(1)>div.relative>div>div>div {
 	background-color: var(--left-sb-bg-color);
 }
 
-.cp__header a.button {
+.cp__header .button.icon {
 	color: var(--left-sb-txt-color);
 }
 
-.cp__header>.l a.button:hover {
+.cp__header>.l .button.icon:hover {
 	background-color: var(--transparent);
 	cursor: pointer;
 }
