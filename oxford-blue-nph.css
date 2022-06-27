@@ -569,9 +569,9 @@ nav:nth-child(1)>div.relative>div>div>div {
 	background-color: var(--left-sb-bg-color);
 }
 
-.cp__header .button.icon {
-	color: var(--left-sb-txt-color);
-}
+ .cp__header>.l .button.icon {
+       color: var(--left-sb-txt-color);
+ }
 
 .cp__header>.l .button.icon:hover {
 	background-color: var(--transparent);
@@ -885,11 +885,6 @@ mark {
 	font-size: inherit;
 }
 
-mark {
-	background: var(--highlighter);
-	font-size: inherit;
-}
-
 mark .page-ref,
 mark .bracket,
 .preview-trigger-wrapper mark,
@@ -1146,6 +1141,12 @@ span.error {
 .graph-filters {
 	background-color: var(--color-level-1);
 }
+
+html[data-theme="dark"] .ui-items-container .ti,
+html[data-theme="dark"] .ui-items-container .button {
+      color: var(--left-sb-txt-color)
+}
+
 
 /* MISC END */
 
